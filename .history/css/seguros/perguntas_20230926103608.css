@@ -39,7 +39,7 @@
   text-align: left;
 }
 .perguntas button:hover::after,
-.perguntas button[aria-expanded="true"]::after {
+.perguntas button[aria-expanded="true"] {
   transform: rotate(180deg);
 }
 .perguntas dd{

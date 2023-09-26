@@ -22,16 +22,5 @@ parametros.forEach(element => {
 const perguntas = document.querySelectorAll('.perguntas button')
 
 perguntas.forEach(element => {
-    element.addEventListener('click', (event) =>{
-        const pergunta = event.currentTarget
-        const controls = pergunta.getAttribute('aria-controls')
-        const resposta = document.getElementById(controls)
-        resposta.classList.toggle('ativa')
-        if(resposta.classList.contains('ativa')){
-            pergunta.setAttribute('aria-expanded', "true" )
-        } else{
-            pergunta.setAttribute('aria-expanded', "false" )
-        }
-
-    })
+    console.log(element);
 });

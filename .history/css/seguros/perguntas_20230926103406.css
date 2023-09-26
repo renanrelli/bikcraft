@@ -38,15 +38,11 @@
   width: 100%;
   text-align: left;
 }
-.perguntas button:hover::after,
-.perguntas button[aria-expanded="true"]::after {
+.perguntas button:hover::after {
   transform: rotate(180deg);
 }
 .perguntas dd{
   display: none;
-}
-.perguntas dd.ativa{
-  display: block;
 }
 .perguntas dd {
   padding-left: 20px;
