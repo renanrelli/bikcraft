@@ -30,8 +30,7 @@
   transition: 0.3s;
   position: absolute;
 }
-.header-menu a:hover::after,
-.header-menu a.ativo::after {
+.header-menu a:hover:after {
   width: 100%;
 }
 @media (max-width: 800px) {
