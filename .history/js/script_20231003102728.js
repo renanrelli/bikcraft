@@ -50,6 +50,4 @@ galeria.forEach(element => {
 });
 
 //Animação
-if(window.SimpleAnime){
-    new SimpleAnime()
-}
+new SimpleAnime()

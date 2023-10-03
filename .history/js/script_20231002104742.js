@@ -42,14 +42,7 @@ const galeriaContainer = document.querySelector('.bicicleta-imagens')
 galeria.forEach(element => {
     element.addEventListener('click' , (e) =>{
         const img = e.currentTarget;
-        const media = matchMedia('(min-width: 1000px)').matches // verifica o tamanho atual da tela
-        if(media){
-            galeriaContainer.prepend(img) // altera a img selecionada para o primeiro elemento do grid
-        }
+        matchMedia('(min-width: 1000px)')
+        galeriaContainer.prepend(img)
     })
 });
-
-//Animação
-if(window.SimpleAnime){
-    new SimpleAnime()
-}

@@ -44,12 +44,7 @@ galeria.forEach(element => {
         const img = e.currentTarget;
         const media = matchMedia('(min-width: 1000px)').matches // verifica o tamanho atual da tela
         if(media){
-            galeriaContainer.prepend(img) // altera a img selecionada para o primeiro elemento do grid
+            galeriaContainer.prepend(img)
         }
     })
 });
-
-//Animação
-if(window.SimpleAnime){
-    new SimpleAnime()
-}
